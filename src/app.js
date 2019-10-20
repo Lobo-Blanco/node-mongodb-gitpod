@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 
 app.get('/', async (req, res) => {
     const tareas = await task.find();
-    console.log(tareas);
+    //console.log(tareas);
     res.render('index', {tasks: tareas});
 })
 
